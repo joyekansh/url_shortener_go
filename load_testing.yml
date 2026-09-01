@@ -1,0 +1,11 @@
+config:
+  target: "http://127.0.0.1:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 1000 # Simulating 1,000 requests per second for 1 minute
+scenarios:
+  - flow:
+      - post:
+          url: "/api/v1"
+          json:
+            url: "https://www.google.com"

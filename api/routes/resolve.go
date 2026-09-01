@@ -28,7 +28,7 @@ func resolveURL(c *fiber Ctx) error{
 	} else if err != nil {
 		log.Printf("%s request cant be served it's not connected to the database", c.IP())
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
-			"Error": "Can not connect to database",
+			"Error": "Can't connect to database",
 		})
 		
 	// The redis instance for handling rate limiting / count of requests 

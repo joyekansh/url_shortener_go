@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/redis/go-redis/v9"
+	"github.com/joyekansh/url_shortener_go/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
